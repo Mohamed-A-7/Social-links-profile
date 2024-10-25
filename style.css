@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: inter;
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  background-color: var(--Grey-900);
+  font-family: inter;
+  font-size: 14px;
+}
+
+main {
+  max-width: 330px;
+  min-width: 320px;
+  margin: 55px auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Grey-800);
+  gap: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+img.image {
+  width: 75px;
+  border-radius: 50%;
+}
+
+h3.location {
+  color: var(--green);
+  font-size: 13px;
+  margin-top: -13px;
+}
+
+div.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+a.link {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+  background-color: var(--Grey-700);
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+a.link:hover {
+  background-color: var(--green);
+  color: var(--Grey-700);
+  font-weight: bold;
+}
